@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PolicyStoreApplication</name>
+    </assembly>
+    <members>
+        <member name="M:PolicyStoreApplication.Controllers.PolicyController.CreatePolicyAsync(PolicyStoreApplication.Dtos.CreatePolicyDto,System.Threading.CancellationToken)">
+             <summary>
+             Creates a policy.
+             </summary>
+             <param name="dto"></param>
+             <param name="cancellationToken"></param>
+             <returns>A newly created PolicyObject</returns>
+             <remarks>
+             Sample request:
+            
+                 POST /policy
+                 {
+                    "policyName": "Code of Conduct",
+                    "policyDescription": "Users will bla bla"
+                    "policyType": 0
+                    "targetType": 1,
+                    "conditions" : {
+                         "Sick Leave": "AAAAAAAAAAA"
+                    }
+                 }
+            
+             </remarks>
+             <response code="201">Returns the newly created item</response>
+             <response code="500">If an internal error occurred</response>
+        </member>
+        <member name="M:PolicyStoreApplication.ServiceCollectionExtensions.AddAndConfigureDatabaseFactoryAndSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)">
+            <summary>
+                Adds and configures the database service. 
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
