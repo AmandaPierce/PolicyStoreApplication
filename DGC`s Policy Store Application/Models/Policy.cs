@@ -10,16 +10,18 @@ namespace PolicyStoreApplication.Models
     {
         public string Id { get; set; }
         public string PolicyName { get; set; }
-        public string PolicyDescription { get; set; }
+        public string PolicyObjective { get; set; }
         public PolicyType PolicyType { get; set; }
         public TargetType TargetType { get; set; }
         public Dictionary<string, string> Conditions { get; set; }
+
+        public Policy() { }
 
         public Policy(Data.Policy policy)
         {
             Id = policy.Id;
             PolicyName = policy.PolicyName;
-            PolicyDescription = policy.PolicyDescription;
+            PolicyObjective = policy.PolicyObjective;
             PolicyType = policy.PolicyType;
             TargetType = policy.TargetType;
             Conditions = policy.Conditions;

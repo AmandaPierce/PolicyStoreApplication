@@ -80,10 +80,11 @@ namespace PolicyStoreApplication.Services
             else
             {
                 policy.PolicyName = policyName;
-                policy.PolicyDescription = policyDescription;
+                policy.PolicyObjective = policyDescription;
                 policy.PolicyType = policyType;
                 policy.TargetType = targetType;
                 policy.Conditions = conditions;
+                policy.ModifiedAt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
                 await this.UpdateItem(id, policy, cancellationToken);
             }

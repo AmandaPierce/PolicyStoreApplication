@@ -3,7 +3,6 @@ using PolicyStoreApplication.Models.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PolicyStoreApplication.Factories
 {
@@ -20,6 +19,9 @@ namespace PolicyStoreApplication.Factories
             _mongoClient = mongoClient ?? throw new ArgumentNullException(nameof(mongoClient));
         }
 
+        /// <summary>
+        ///     Retrieves a mongo db collection from the database. 
+        /// </summary>
         public IMongoDbCollection<T> GetCollection<T>(string collectionName) where T : IDocument
         {
             if(_collectionNames.Where(n => n == collectionName) == null)

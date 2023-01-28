@@ -9,22 +9,24 @@ namespace PolicyStoreApplication.Models.Data
     public class Policy : IDocument
     {
         public string PolicyName { get; set; }
-        public string PolicyDescription { get; set; }
+        public string PolicyObjective { get; set; }
         public PolicyType PolicyType { get; set; }
         public TargetType TargetType { get; set; }
         public Dictionary<string, string> Conditions { get; set; }
-        DateTimeOffset CreatedAt { get; set; }
-        DateTimeOffset ModifiedAt { get; set; }
+        public long CreatedAt { get; set; }
+        public long ModifiedAt { get; set; }
 
-        public Policy(string policyName, string policyDescription, PolicyType policyType, TargetType targetType, Dictionary<string, string> conditions)
+        public Policy() { }
+
+        public Policy(string policyName, string policyDescription, PolicyType policyType, TargetType targetType, Dictionary<string, string> conditions = null)
         {
             Id = Guid.NewGuid().ToString();
             PolicyName = policyName;
-            PolicyDescription = policyDescription;
+            PolicyObjective = policyDescription;
             PolicyType = policyType;
             TargetType = targetType;
             Conditions = conditions;
-            CreatedAt = DateTimeOffset.UtcNow;
+            CreatedAt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             ModifiedAt = CreatedAt;
         }
     }
