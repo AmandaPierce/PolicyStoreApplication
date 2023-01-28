@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DGC`s Policy Store Application\PolicyStoreApplication.csproj" />
+    <ProjectReference Include="..\PolicyStoreApplication\PolicyStoreApplication.csproj" />
   </ItemGroup>
 
 </Project>

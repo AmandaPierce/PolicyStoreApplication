@@ -7187,8 +7187,8 @@
     },
     "PolicyStoreApplication/1.0.0": {
       "type": "project",
-      "path": "../DGC`s Policy Store Application/PolicyStoreApplication.csproj",
-      "msbuildProject": "../DGC`s Policy Store Application/PolicyStoreApplication.csproj"
+      "path": "../PolicyStoreApplication/PolicyStoreApplication.csproj",
+      "msbuildProject": "../PolicyStoreApplication/PolicyStoreApplication.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7229,8 +7229,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\manda\\source\\repos\\PolicyStoreApplication\\DGC`s Policy Store Application\\PolicyStoreApplication.csproj": {
-              "projectPath": "C:\\Users\\manda\\source\\repos\\PolicyStoreApplication\\DGC`s Policy Store Application\\PolicyStoreApplication.csproj"
+            "C:\\Users\\manda\\source\\repos\\PolicyStoreApplication\\PolicyStoreApplication\\PolicyStoreApplication.csproj": {
+              "projectPath": "C:\\Users\\manda\\source\\repos\\PolicyStoreApplication\\PolicyStoreApplication\\PolicyStoreApplication.csproj"
             }
           }
         }

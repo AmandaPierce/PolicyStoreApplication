@@ -11,9 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("PolicyStoreApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "$([System.IO.Path]::GetDirectoryName(C:\\Users\\manda\\source\\repos\\PolicyStoreAppli" +
-    "cation\\DGC`s Policy Store Application\\PolicyStoreApplication.csproj))", "$([System.IO.Path]::GetFileName(C:\\Users\\manda\\source\\repos\\PolicyStoreApplicatio" +
-    "n\\DGC`s Policy Store Application\\PolicyStoreApplication.csproj))", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("PolicyStoreApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\manda\\source\\repos\\PolicyStoreApplication\\PolicyStoreApplication", "PolicyStoreApplication.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PolicyStoreApplication.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
